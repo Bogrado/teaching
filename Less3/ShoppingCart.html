@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <div class="container padding-site">
+                    <div class="logo">
+                        <a href="index.html">BRAN<span>D</span></a>
+                    </div>
+                    <form class="browse-search">
+                        <div>
+                            Browse
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="text" placeholder="Search for Item...">
+                        <i class="fas fa-search"></i>
+                    </form>
+                    <a class="bag" href="ShoppingCart.html"><img src="img/cart.png" alt="bag"></a>
+                    <a class="account myacc" href="#">
+                        My Account
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                </div>
+
+            </div>
+            <nav class="main-Nav padding-site">
+                <a href="index.html">Home</a>
+                <a href="#">Man</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+                <a href="#">Featured</a>
+                <a href="#">Hot Deals</a>
+            </nav>
+            <div class="new-Arrivals">
+                <div class="container padding-site">
+                    <h1>New Arrivals</h1>
+                    <nav>
+                        <a href="#">Home</a>
+                        /
+                        <a href="#">Men</a>
+                        /
+                        <a href="#">New Arrivals </a>
+                    </nav>
+                </div>
+            </div>
+            <main>
+                <div class="details">
+                    <div class="container padding-site">
+                        <div class="product-Details">Product Details</div>
+                        <div class="product-Details">Unite Price</div>
+                        <div class="product-Details">Quantity</div>
+                        <div class="product-Details">Shipping</div>
+                        <div class="product-Details">Subtotal</div>
+                        <div class="product-Details">Action</div>
+                    </div>
+                    <section class="container2 padding-site">
+                        <div class="cart-Item"><img src="img/prod_1.jpg" alt="product_1">
+                            <div class="short-Desc">
+                                <h2>Mango People T-shirt</h2>
+                                <p>Color:<span>Red</span>
+                                    <br>
+                                    Size:<span>Xll</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-Item-Column">$150</div>
+                        <div class="cart-Item-Column">
+                            <div class="quantity"><input type="text" placeholder=2></div>
+                        </div>
+                        <div class="cart-Item-Column">FREE</div>
+                        <div class="cart-Item-Column">$300</div>
+                        <div class="cart-Item-Column"><i class="far fa-times-circle"></i></div>
+                    </section>
+                    <section class="container2 padding-site">
+                        <div class="cart-Item"><img src="img/prod_3.jpg" alt="product_3">
+                            <div class="short-Desc">
+                                <h2>Mango People T-shirt</h2>
+                                <p>Color:<span>Red</span>
+                                    <br>
+                                    Size:<span>Xll</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-Item-Column">$150</div>
+                        <div class="cart-Item-Column">
+                            <div class="quantity"><input type="text" placeholder=2></div>
+                        </div>
+                        <div class="cart-Item-Column">FREE</div>
+                        <div class="cart-Item-Column">$300</div>
+                        <div class="cart-Item-Column"><i class="far fa-times-circle"></i></div>
+                    </section>
+                    <section class="container2 padding-site">
+                        <div class="cart-Item"><img src="img/prod_2.jpg" alt="product_2">
+                            <div class="short-Desc">
+                                <h2>Mango People T-shirt</h2>
+                                <p>Color:<span>Red</span>
+                                    <br>
+                                    Size:<span>Xll</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-Item-Column">$150</div>
+                        <div class="cart-Item-Column">
+                            <div class="quantity"><input type="text" placeholder=2></div>
+                        </div>
+                        <div class="cart-Item-Column">FREE</div>
+                        <div class="cart-Item-Column">$300</div>
+                        <div class="cart-Item-Column"><i class="far fa-times-circle"></i></div>
+
+                    </section>
+
+
+
+                </div>
+                <div class="cart-Buttons">
+                    <div class="container padding-site">
+                        <button>cLEAR SHOPPING CART</button>
+                        <button>cONTINUE sHOPPING</button>
+                    </div>
+                </div>
+                <div class="shipping-Form">
+                    <div class="container padding-site">
+                        <section class="shipping-Column">
+                            <form>
+                                <h2>Shipping Adress</h2>
+                                <select>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Tatooine">Tatooine</option>
+                                </select>
+                                <input type="text" placeholder="State">
+                                <input type="text" placeholder="Postcode / Zip">
+                                <button class="quote-Coupon">
+                                    get a quote
+                                </button>
+                            </form>
+
+                        </section>
+                        <section class="shipping-Column">
+                            <form>
+                                <h2>Coupon discount</h2>
+                                <p>Enter your coupon code if you have one</p>
+                                <input type="text" placeholder="coupon code">
+                                <button class="quote-Coupon">
+                                    Apply coupon
+                                </button>
+                            </form>
+
+                        </section>
+                        <section class="shipping-Column">
+                            <h3 class="sub-TotalH">Sub total <span>$900</span></h3>
+                            <h2 class="grand-TotalH">grand total <span class="grand-Value">$900</span></h2>
+                            <button class="checkout">proceed to checkout</button>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <div class="feedback-slider">
+                <div class="container padding-site">
+                    <div class="feedback">
+                        <img src="img/ellipse_3_2206.png" alt="icon1">
+                        <div class="feedback-text">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                            <h1>Bin Burhan </h1>
+                            <h2>Dhaka, Bd</h2>
+                        </div>
+
+                    </div>
+                    <div class="feedback-Form">
+                        <div class="feedback-Heading">
+                            <h1>Subscribe</h1>
+                            <h2>FOR OUR NEWLETTER AND PROMOTION</h2>
+                            <div class="formmail">
+                                <input class="input1" type="search" name="q" placeholder="Enter Your Email">
+                                <input class="input2" type="submit" value="Subscribe">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="information padding-site">
+                <div class="container">
+                    <section class="brand-Info">
+                        <h2 class="logo">
+                            <a href="#">BRAN<span>D</span></a>
+                        </h2>
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                        <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                    </section>
+                    <section class="company">
+                        <h2>Company</h2>
+                        <nav>
+                            <a href="#">Home</a>
+                            <a href="#">Shop</a>
+                            <a href="#">About</a>
+                            <a href="#">How It Works</a>
+                            <a href="#">Contact</a>
+                        </nav>
+                    </section>
+                    <section class="company">
+                        <h2>INFORMATION</h2>
+                        <nav>
+                            <a href="#">Tearms &amp; Condition</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">How to Buy</a>
+                            <a href="#">How to Sell</a>
+                            <a href="#">Promotion</a>
+                        </nav>
+                    </section>
+                    <section class="company">
+                        <h2>SHOP CATEGORY</h2>
+                        <nav>
+
+                            <a href="#">Men</a>
+                            <a href="#">Women</a>
+                            <a href="#">Child</a>
+                            <a href="#">Apparel</a>
+                            <a href="#">Browse All</a>
+                        </nav>
+                    </section>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer class="footer ">
+
+            <div class="container padding-site">
+                <div class="ARR">
+                    © 2017 Brand All Rights Reserved.
+                </div>
+                <nav class="external-links ">
+                    <a href="#"><img src="img/FB.png" alt="fb"></a>
+                    <a href="#"><img src="img/tw.png" alt="tw"></a>
+                    <a href="#"><img src="img/in.png" alt="in"></a>
+                    <a href="#"><img src="img/pr.png" alt="pr"></a>
+                    <a href="#"><img src="img/Gpl.png" alt="G+"></a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+</body></html>

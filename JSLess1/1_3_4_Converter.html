@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        form {
+            width: 233px;
+            margin: 100px auto;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        .line {
+            height: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .resetValue {
+            padding: 15px;
+            width: 100px;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        h2 {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Converter">
+        <div>
+            Celcius:<input class="line" placeholder="Enten number" id="c">
+        </div>
+        <div>
+            Fahrenheit:<input class="line" placeholder="Enten number" id="f">
+        </div>
+        <div class="buttons">
+            <button type="button" id="convertation" onclick="convert()">Convert</button>
+            <input class="resetValue" type="reset" value="Reset">
+
+
+        </div>
+
+    </form>
+    <div class="3">
+    <h2>3. *Чему будет равно JS-выражение 1000 + "108"/</h2>
+    <p>
+    Ответ: 1000108
+    </p>
+
+
+    </div>
+    <div class="4">
+<h2>4. *Самостоятельно разобраться с атрибутами тега script (async и defer)/</h2>
+   <p>Так как в современных сайте имеется большое количество скриптов, они мешают своевременной отрисовке страницы, теги async и defer решают эту проблему и не блокируют отрисовку страницы до выполнения всех скриптов.
+    Различия между этими двумя тегами в порядке загрузки: у async, кто загрузится первым, тот и сработает, у defer, выполнение происходит по порядку из самого документа, но после того как документ будет полностью загружен и обработан</p>
+    </div>
+
+
+
+    <script>
+        function convert() {
+            let c = document.getElementById('c'),
+                f = document.getElementById('f');
+            if (c.value != '') {
+                f.value = Math.round(c.value) * 9 / 5 + 32;
+                c.value = '';
+            } else {
+                c.value = Math.round(f.value - 32) * 5 / 9;
+                f.value = '';
+            }
+        }
+    </script>
+</body></html>
